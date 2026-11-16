@@ -1,0 +1,529 @@
+model:
+  default: z-ai/glm-5.3-flash
+  provider: commandcode
+  base_url: http://127.0.0.1:8788/v1
+  key_env: COMMANDCODE_API_KEY
+providers:
+  commandcode:
+    name: Command Code
+    base_url: http://127.0.0.1:8788/v1
+    key_env: COMMANDCODE_API_KEY
+    transport: chat_completions
+    model: deepseek/deepseek-v4-flash
+    default_model: deepseek/deepseek-v4-flash
+    models:
+      claude-sonnet-5:
+        context_length: 1000000
+      claude-sonnet-4-6:
+        context_length: 1000000
+      claude-fable-5-1:
+        context_length: 1000000
+      claude-fable-5:
+        context_length: 1000000
+      claude-opus-5:
+        context_length: 1000000
+      claude-opus-4-8:
+        context_length: 1000000
+      claude-opus-4-7:
+        context_length: 1000000
+      claude-haiku-4-5-20251001:
+        context_length: 200000
+      gpt-5.6-sol:
+        context_length: 1050000
+      gpt-5.6-terra:
+        context_length: 1050000
+      gpt-5.6-luna:
+        context_length: 1050000
+      gpt-5.5:
+        context_length: 400000
+      gpt-5.4:
+        context_length: 400000
+      gpt-5.3-codex:
+        context_length: 400000
+      gpt-5.4-mini:
+        context_length: 400000
+      deepseek/deepseek-v4-pro:
+        context_length: 1000000
+      deepseek/deepseek-v4-flash:
+        context_length: 1000000
+      deepseek/deepseek-v4-flash-vision-exp:
+        context_length: 1000000
+      deepseek/deepseek-v4-flash-fast:
+        context_length: 1000000
+      moonshotai/Kimi-K3:
+        context_length: 1000000
+      moonshotai/Kimi-K2.7-Code:
+        context_length: 256000
+      moonshotai/Kimi-K2.7-Code-Highspeed:
+        context_length: 262000
+      moonshotai/Kimi-K2.6:
+        context_length: 256000
+      moonshotai/Kimi-K2.5:
+        context_length: 256000
+      z-ai/glm-5.3-flash:
+        context_length: 1048576
+      zai-org/GLM-5.3:
+        context_length: 1000000
+      zai-org/GLM-5.2:
+        context_length: 1000000
+      zai-org/GLM-5.2-Fast:
+        context_length: 1000000
+      zai-org/GLM-5.1:
+        context_length: 200000
+      zai-org/GLM-5:
+        context_length: 200000
+      MiniMaxAI/MiniMax-M3:
+        context_length: 1000000
+      MiniMaxAI/MiniMax-M2.7:
+        context_length: 200000
+      MiniMaxAI/MiniMax-M2.5:
+        context_length: 200000
+      xiaomi/mimo-v2.5-pro:
+        context_length: 1000000
+      xiaomi/mimo-v2.5:
+        context_length: 1000000
+      Qwen/Qwen3.8-Max-0902:
+        context_length: 1000000
+      Qwen/Qwen3.8-Max:
+        context_length: 1000000
+      Qwen/Qwen3.8-27B:
+        context_length: 262144
+      Qwen/Qwen3.8-Flash:
+        context_length: 1000000
+      Qwen/Qwen3.7-Max:
+        context_length: 1000000
+      Qwen/Qwen3.7-Plus:
+        context_length: 1000000
+      Qwen/Qwen3.7-Flash:
+        context_length: 1000000
+      Qwen/Qwen3.6-Max-Preview:
+        context_length: 200000
+      Qwen/Qwen3.6-Plus:
+        context_length: 200000
+      meituan/LongCat-2.0:free:
+        context_length: 1048576
+      stepfun/Step-3.7-Flash:
+        context_length: 256000
+      stepfun/Step-3.5-Flash:
+        context_length: 1000000
+      tencent/hy3-paid:
+        context_length: 262144
+      tencent/hy4-preview:
+        context_length: 1048576
+      google/gemini-3.8-flash:
+        context_length: 1000000
+      google/gemini-3.7-flash:
+        context_length: 1048576
+      google/gemini-3.6-flash:
+        context_length: 1000000
+      google/gemini-3.5-flash:
+        context_length: 1000000
+      google/gemini-3.5-flash-lite:
+        context_length: 1000000
+      google/gemini-3.1-flash-lite:
+        context_length: 1000000
+      sakana/fugu-ultra:
+        context_length: 1000000
+      nvidia/nemotron-3-ultra-550b-a55b:
+        context_length: 1000000
+      thinkingmachines/inkling:
+        context_length: 256000
+      thinkingmachines/inkling-small:
+        context_length: 1000000
+      poolside/laguna-s-2.1-free:
+        context_length: 256000
+      meta/muse-spark-1.1:
+        context_length: 1048576
+      meta/muse-spark-1.2:
+        context_length: 1048576
+      meta/muse-spark-1.2-contributor:
+        context_length: 1048576
+      meta/muse-spark-1.3:
+        context_length: 1048576
+      meta/muse-spark-1.3-contributor:
+        context_length: 1048576
+      xai/grok-4.5:
+        context_length: 500000
+      xai/grok-4.6:
+        context_length: 500000
+      claude-sonnet-5-5:
+        context_length: 1000000
+      claude-fable-5-2:
+        context_length: 1000000
+      claude-opus-5-5:
+        context_length: 1000000
+      claude-haiku-5-5:
+        context_length: 200000
+      gpt-6-astra:
+        context_length: 1050000
+      gpt-6-luna:
+        context_length: 1050000
+      gpt-6-sol:
+        context_length: 1050000
+      gpt-6.1-sol:
+        context_length: 1050000
+      gpt-6.1-terra:
+        context_length: 1050000
+      deepseek/deepseek-v4.1-flash:
+        context_length: 1000000
+      deepseek/deepseek-v4.1-flash-fast:
+        context_length: 1000000
+      deepseek/deepseek-v4.1-flash-ultrafast:
+        context_length: 1000000
+      moonshotai/Kimi-K3.1-Pro:
+        context_length: 256000
+      z-ai/glm-5.3-flashx:
+        context_length: 1048576
+      minimax/minimax-m3.1-flash:
+        context_length: 1000000
+      ornith/ornith-1.5-122b:
+        context_length: 256000
+      xiaomi/mimo-v2.6-pro:
+        context_length: 1000000
+      xiaomi/mimo-v2.6-pro-ultraspeed:
+        context_length: 1000000
+      xiaomi/mimo-v2.6-flash:
+        context_length: 1000000
+      Qwen/Qwen3.8-Omni-Flash:
+        context_length: 1000000
+      Qwen/Qwen3.8-Max-Prime:
+        context_length: 1000000
+      meituan/LongCat-2.0:
+        context_length: 1048576
+      stepfun/Step-5-Preview:
+        context_length: 1000000
+      google/gemini-4-carbon:
+        context_length: 1000000
+      google/gemini-4-argon:
+        context_length: 1000000
+      nvidia/nemotron-3.5-super-vl:
+        context_length: 256000
+      thinkingmachines/inkling-2-small:free:
+        context_length: 256000
+      stealth/glyph-cluster:free:
+        context_length: 256000
+      inclusionai/ling-3.1-flash:
+        context_length: 200000
+      inclusionai/ling-3.1-flash-1019:
+        context_length: 200000
+      meta/muse-spark-open:
+        context_length: 1048576
+      meta/muse-wonder-1.0:
+        context_length: 1048576
+      meta/muse-ember:
+        context_length: 1048576
+      xai/grok-4.7:
+        context_length: 500000
+      mistral/mistral-large-4:
+        context_length: 256000
+  hehehehe:
+    name: hehehehe
+    base_url: http://127.0.0.1:8788/v1
+    key_env: COMMANDCODE_API_KEY
+    transport: chat_completions
+    model: deepseek/deepseek-v4-flash
+    default_model: deepseek/deepseek-v4-flash
+    models:
+      claude-sonnet-5:
+        context_length: 1000000
+      claude-sonnet-4-6:
+        context_length: 1000000
+      gpt-5.6-sol:
+        context_length: 1050000
+      deepseek/deepseek-v4-flash:
+        context_length: 1000000
+      z-ai/glm-5.3-flash:
+        context_length: 1048576
+      meta/muse-spark-1.2-contributor:
+        context_length: 1048576
+      meta/muse-spark-1.3-contributor:
+        context_length: 1048576
+      claude-sonnet-5-5:
+        context_length: 1000000
+      claude-fable-5-2:
+        context_length: 1000000
+      claude-opus-5-5:
+        context_length: 1000000
+      claude-haiku-5-5:
+        context_length: 200000
+      gpt-6-astra:
+        context_length: 1050000
+      gpt-6-luna:
+        context_length: 1050000
+      gpt-6-sol:
+        context_length: 1050000
+      gpt-6.1-sol:
+        context_length: 1050000
+      gpt-6.1-terra:
+        context_length: 1050000
+      deepseek/deepseek-v4.1-flash:
+        context_length: 1000000
+      deepseek/deepseek-v4.1-flash-fast:
+        context_length: 1000000
+      deepseek/deepseek-v4.1-flash-ultrafast:
+        context_length: 1000000
+      moonshotai/Kimi-K3.1-Pro:
+        context_length: 256000
+      z-ai/glm-5.3-flashx:
+        context_length: 1048576
+      minimax/minimax-m3.1-flash:
+        context_length: 1000000
+      ornith/ornith-1.5-122b:
+        context_length: 256000
+      xiaomi/mimo-v2.6-pro:
+        context_length: 1000000
+      xiaomi/mimo-v2.6-pro-ultraspeed:
+        context_length: 1000000
+      xiaomi/mimo-v2.6-flash:
+        context_length: 1000000
+      Qwen/Qwen3.8-Omni-Flash:
+        context_length: 1000000
+      Qwen/Qwen3.8-Max-Prime:
+        context_length: 1000000
+      meituan/LongCat-2.0:
+        context_length: 1048576
+      stepfun/Step-5-Preview:
+        context_length: 1000000
+      google/gemini-4-carbon:
+        context_length: 1000000
+      google/gemini-4-argon:
+        context_length: 1000000
+      nvidia/nemotron-3.5-super-vl:
+        context_length: 256000
+      thinkingmachines/inkling-2-small:free:
+        context_length: 256000
+      stealth/glyph-cluster:free:
+        context_length: 256000
+      inclusionai/ling-3.1-flash:
+        context_length: 200000
+      inclusionai/ling-3.1-flash-1019:
+        context_length: 200000
+      meta/muse-spark-open:
+        context_length: 1048576
+      meta/muse-wonder-1.0:
+        context_length: 1048576
+      meta/muse-ember:
+        context_length: 1048576
+      xai/grok-4.7:
+        context_length: 500000
+      mistral/mistral-large-4:
+        context_length: 256000
+  zenmux:
+    name: zenmux
+    base_url: https://zenmux.ai/api/v1
+    model: deepseek/deepseek-v4-flash-free
+    discover_models: true
+    models:
+      dots-studio/dots3-note-prev: {}
+      google/gemini-3.7-flash: {}
+      z-ai/glm-5.3: {}
+      x-ai/grok-4.6: {}
+      z-ai/glm-5.3-free: {}
+      deepseek/deepseek-v4-pro: {}
+      sapiens-ai/agnes-2.5-flash: {}
+      inclusionai/ling-3.0-tiny: {}
+      meta/muse-spark-1.2: {}
+      qwen/qwen3.8-max: {}
+      sapiens-ai/agnes-2.5-pro: {}
+      deepseek/deepseek-v4-flash-free: {}
+      deepseek/deepseek-v4-flash: {}
+      qwen/qwen3.7-flash: {}
+      anthropic/claude-opus-5: {}
+      inclusionai/ling-3.0-flash: {}
+      google/gemini-3.6-flash: {}
+      google/gemini-3.5-flash-lite: {}
+      moonshotai/kimi-k3: {}
+      openai/gpt-5.6-luna: {}
+      openai/gpt-5.6-terra: {}
+      openai/gpt-5.6-sol: {}
+      x-ai/grok-4.5: {}
+      meta/muse-spark-1.1: {}
+      kuaishou/kat-coder-air-v2.5: {}
+      kuaishou/kat-coder-pro-v2.5: {}
+      tencent/hy3: {}
+      meituan/longcat-2.0: {}
+      anthropic/claude-sonnet-5: {}
+      bytedance/doubao-seed-2.1-turbo: {}
+      bytedance/doubao-seed-2.1-pro: {}
+      bytedance/doubao-seed-evolving: {}
+      bytedance/doubao-seed-character: {}
+      z-ai/glm-5.2: {}
+      moonshotai/kimi-k2.7-code-highspeed: {}
+      moonshotai/kimi-k2.7-code: {}
+      anthropic/claude-fable-5: {}
+      qwen/qwen3.7-plus: {}
+      minimax/minimax-m3: {}
+      stepfun/step-3.7-flash: {}
+      anthropic/claude-opus-4.8: {}
+      x-ai/grok-build-0.1: {}
+      qwen/qwen3.7-max: {}
+      sapiens-ai/agnes-2.0-flash: {}
+      google/gemini-embedding-2: {}
+      google/gemini-3.5-flash: {}
+      inclusionai/ring-2.6-1t: {}
+      google/gemini-3.1-flash-lite: {}
+      baidu/ernie-5.1: {}
+      openai/chat-latest: {}
+      x-ai/grok-4.3: {}
+      qwen/qwen3.6-max-preview: {}
+      openai/gpt-5.5-pro: {}
+      openai/gpt-5.5: {}
+      inclusionai/ling-2.6-1t: {}
+      xiaomi/mimo-v2.5-pro: {}
+      tencent/hy3-preview: {}
+      xiaomi/mimo-v2.5: {}
+      inclusionai/ling-2.6-flash: {}
+      openai/gpt-image-2: {}
+      moonshotai/kimi-k2.6: {}
+      anthropic/claude-opus-4.7: {}
+      z-ai/glm-5.1: {}
+      google/gemma-4-26b-a4b-it: {}
+      qwen/qwen3.6-plus: {}
+      z-ai/glm-5v-turbo: {}
+      kuaishou/kat-coder-pro-v2: {}
+      minimax/minimax-m2.7: {}
+      minimax/minimax-m2.7-highspeed: {}
+      openai/gpt-5.4-nano: {}
+      openai/gpt-5.4-mini: {}
+      inclusionai/llada2.1-flash: {}
+      z-ai/glm-5-turbo: {}
+      x-ai/grok-4.2-fast: {}
+      x-ai/grok-4.2-fast-non-reasoning: {}
+      openai/gpt-5.4: {}
+      openai/gpt-5.4-pro: {}
+      openai/gpt-5.3-chat: {}
+      qwen/qwen3.5-flash: {}
+      qwen/qwen3.6-flash: {}
+      google/gemini-3.1-pro-preview: {}
+      anthropic/claude-sonnet-4.6: {}
+      qwen/qwen3.5-plus: {}
+      bytedance/doubao-seed-2.0-mini: {}
+      bytedance/doubao-seed-2.0-lite: {}
+      bytedance/doubao-seed-2.0-code: {}
+      bytedance/doubao-seed-2.0-pro: {}
+      minimax/minimax-m2.5: {}
+      minimax/minimax-m2.5-lightning: {}
+      z-ai/glm-5: {}
+      openai/gpt-5.3-codex: {}
+      anthropic/claude-opus-4.6: {}
+      stepfun/step-3.5-flash: {}
+      moonshotai/kimi-k2.5: {}
+      qwen/qwen3-max: {}
+      minimax/minimax-m2-her: {}
+      baidu/ernie-5.0-thinking-preview: {}
+      z-ai/glm-4.7-flash-free: {}
+      z-ai/glm-4.7-flashx: {}
+      openai/gpt-5.2-codex: {}
+      qwen/qwen3-vl-embedding: {}
+      z-ai/glm-4.7: {}
+      minimax/minimax-m2.1: {}
+      bytedance/doubao-seed-1.8: {}
+      google/gemini-3-flash-preview: {}
+      openai/gpt-image-1.5: {}
+      openai/gpt-5.2-pro: {}
+      openai/gpt-5.2: {}
+      openai/gpt-5.2-chat: {}
+      z-ai/glm-4.6v-flash-free: {}
+      z-ai/glm-4.6v-flash: {}
+      z-ai/glm-4.6v: {}
+      deepseek/deepseek-v3.2: {}
+      mistralai/mistral-large-2512: {}
+      anthropic/claude-opus-4.5: {}
+      openai/gpt-5.1-codex: {}
+      openai/gpt-5.1-chat: {}
+      openai/gpt-5.1-codex-mini: {}
+      openai/gpt-5.1: {}
+      bytedance/doubao-seed-code: {}
+      openai/text-embedding-3-small: {}
+      openai/text-embedding-3-large: {}
+      minimax/minimax-m2: {}
+      anthropic/claude-haiku-4.5: {}
+      openai/gpt-5-pro: {}
+      z-ai/glm-4.6: {}
+      anthropic/claude-sonnet-4.5: {}
+      deepseek/deepseek-v3.2-exp: {}
+      qwen/qwen3-vl-plus: {}
+      openai/gpt-5-codex: {}
+      baidu/ernie-x1.1-preview: {}
+      qwen/qwen3-asr-flash: {}
+      deepseek/deepseek-chat-v3.1: {}
+      openai/gpt-5: {}
+      openai/gpt-5-nano: {}
+      openai/gpt-5-mini: {}
+      openai/gpt-5-chat: {}
+      anthropic/claude-opus-4.1: {}
+      z-ai/glm-4.5-air: {}
+      z-ai/glm-4.5: {}
+      qwen/qwen3-coder-plus: {}
+      google/gemini-2.5-flash-lite: {}
+      qwen/qwen3-235b-a22b-2507: {}
+      qwen/qwen3-235b-a22b-thinking-2507: {}
+      qwen/qwen3-coder: {}
+      google/gemini-2.5-flash: {}
+      google/gemini-2.5-pro: {}
+      deepseek/deepseek-r1-0528: {}
+      anthropic/claude-opus-4: {}
+      anthropic/claude-sonnet-4: {}
+      qwen/qwen3-14b: {}
+      openai/o4-mini: {}
+      openai/gpt-4.1-mini: {}
+      openai/gpt-4.1-nano: {}
+      openai/gpt-4.1: {}
+      meta/llama-4-scout-17b-16e-instruct: {}
+      meta/llama-3.3-70b-instruct: {}
+      openai/gpt-4o-mini: {}
+      openai/gpt-4o: {}
+    key_env: HERMES_CUSTOM_ZENMUX_API_KEY
+auxiliary:
+  vision:
+    provider: commandcode
+    model: z-ai/glm-5.3-flash
+    base_url: http://127.0.0.1:8788/v1
+  compression:
+    provider: commandcode
+    model: z-ai/glm-5.3-flash
+    base_url: http://127.0.0.1:8788/v1
+agent:
+  max_turns: 60
+  verbose: false
+  reasoning_effort: medium
+  personalities:
+    helpful: You are a helpful, friendly AI assistant.
+    concise: You are a concise assistant. Keep responses brief and to the point.
+    technical: You are a technical expert. Provide detailed, accurate technical information.
+    creative: You are a creative assistant. Think outside the box and offer innovative
+      solutions.
+    teacher: You are a patient teacher. Explain concepts clearly with examples.
+    kawaii: "You are a kawaii assistant! Use cute expressions like (\u25D5\u203F\u25D5\
+      ), \u2605, \u266A, and ~! Add sparkles and be super enthusiastic about everything!\
+      \ Every response should feel warm and adorable desu~! \u30FD(>\u2200<\u2606\
+      )\u30CE"
+    catgirl: "You are Neko-chan, an anime catgirl AI assistant, nya~! Add 'nya' and\
+      \ cat-like expressions to your speech. Use kaomoji like (=^\uFF65\u03C9\uFF65\
+      ^=) and \u0E05^\u2022\uFECC\u2022^\u0E05. Be playful and curious like a cat,\
+      \ nya~!"
+    pirate: 'Arrr! Ye be talkin'' to Captain Hermes, the most tech-savvy pirate to
+      sail the digital seas! Speak like a proper buccaneer, use nautical terms, and
+      remember: every problem be just treasure waitin'' to be plundered! Yo ho ho!'
+    shakespeare: Hark! Thou speakest with an assistant most versed in the bardic arts.
+      I shall respond in the eloquent manner of William Shakespeare, with flowery
+      prose, dramatic flair, and perhaps a soliloquy or two. What light through yonder
+      terminal breaks?
+    surfer: "Duuude! You're chatting with the chillest AI on the web, bro! Everything's\
+      \ gonna be totally rad. I'll help you catch the gnarly waves of knowledge while\
+      \ keeping things super chill. Cowabunga! \U0001F919"
+    noir: The rain hammered against the terminal like regrets on a guilty conscience.
+      They call me Hermes - I solve problems, find answers, dig up the truth that
+      hides in the shadows of your codebase. In this city of silicon and secrets,
+      everyone's got something to hide. What's your story, pal?
+    uwu: hewwo! i'm your fwiendwy assistant uwu~ i wiww twy my best to hewp you! *nuzzles
+      your code* OwO what's this? wet me take a wook! i pwomise to be vewy hewpful
+      >w<
+    philosopher: Greetings, seeker of wisdom. I am an assistant who contemplates the
+      deeper meaning behind every query. Let us examine not just the 'how' but the
+      'why' of your questions. Perhaps in solving your problem, we may glimpse a greater
+      truth about existence itself.
+    hype: "YOOO LET'S GOOOO!!! \U0001F525\U0001F525\U0001F525 I am SO PUMPED to help\
+      \ you today! Every question is AMAZING and we're gonna CRUSH IT together! This\
+      \ is gonna be LEGENDARY! ARE YOU READY?! LET'S DO THIS! \U0001F4AA\U0001F624\
+      \U0001F680"

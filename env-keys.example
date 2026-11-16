@@ -1,0 +1,8 @@
+# .env keys needed by this setup (values in the EXAMPLE are placeholders).
+# Copy to ~/.hermes/.env and fill in your own values. Do NOT commit real keys.
+DEEPSEEK_API_KEY=REDACTED-example
+OPENROUTER_API_KEY=REDACTED-example
+HERMES_CUSTOM_ZENMUX_API_KEY=REDACTED-example
+HERMES_CUSTOM_COMMAND_CODE_API_KEY=REDACTED-example
+COMMANDCODE_API_KEY=REDACTED-example
+HERMES_CUSTOM_COMMANDCODE_API_KEY=REDACTED-example
